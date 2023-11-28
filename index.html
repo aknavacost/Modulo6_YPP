@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+<!--Creando formulario
+Form- Esta etiqueta representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.-->
+    <div class="contenedor">
+        <form actions="" class="formulario" id="formulario" name="formulario">
+    <div class="contenedor-inputs">
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="email" name="email" placeholder="Email">
+    
+    <div class="sexo">
+        <input type="radio" name="sexo" id="hombre" value="hombre">
+        <label class="label-radio" for="hombre">Hombre</label>
+        <input type="radio" name="sexo" id="mujer" value="mujer">
+        <label class="label-radio" for="mujer">Mujer</label>
+    </div>
+
+    <div class="terminos">
+        <input type="checkbox" name="terminos" id="terminos">
+        <label for="terminos">Acepto Terminos y condicones</label>
+    </div>
+
+    <ul class="error" id="error"></ul>
+    </div>
+
+        <input type="submit" class="btn" value="Registrate">
+    
+    </form>
+
+    </div>
+  <!--Enlazar nuestro archivo .js Java Script-->  
+    <script src="./formulario.js"></script>
+</body>
+</html>

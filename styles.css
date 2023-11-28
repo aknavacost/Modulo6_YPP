@@ -1,0 +1,112 @@
+
+/*Estilos de RESET de estilos */
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Estilos en general del FORMULARIO*/
+body{
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    font-size:10px;
+}
+.contenedor{
+    width: 400px;
+    margin: 40px;
+}
+
+/*Estilos INPUTS*/
+.formulario .contenedor-inputs{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px 6px 0 0;
+}
+
+/*Estilos de apartado de llenado de EMAIL & NOMBRE*/
+.formulario input[type="text"],
+.formulario input[type="email"] {
+    display: block;
+    width:100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border:none;
+    border-bottom:2px solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.formulario input[type="text"]:hover,
+.formulario input[type="email"]:hover{
+    border-bottom: 2px solid #246eb9;
+}
+
+/*Estilos de apartado de seleccionar un SEXO*/
+.formulario input[type="radio"]{
+    display:none;
+}
+.formulario .sexo{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+.formulario.sexo .hombre{
+    border-radius: 3px 0 0 3px;
+}
+.formulario .sexo .mujer{
+    border-radius: 0 3px 3px 0;
+}
+
+
+.formulario .label-radio{
+    background: rgba(249,160,63,.4);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 49.5%;
+}
+.formulario input[type="radio"]:hover + .label-radio{
+    background:#f9a03f;
+}
+
+/*Estilos de apartado de TERMINOS*/
+.formulario .terminos{
+    text-align: center;
+    color: #424242;
+}
+
+.formularios .label{
+    margin-left: 10px;
+}
+
+/*Estilos de apartado de apariciòn de ERRORES*/
+.formulario .error{
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: #ce1818;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px;
+}
+
+/*Estilos de boton REGISTRATE*/
+.formulario .btn{
+    width: 100%;
+    text-align: center;
+    background: #246eb9;
+    color: #fff;
+    border:none;
+    display: block;
+    padding: 15px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.formulario .btn:hover{
+    background: #4357ad;
+}
